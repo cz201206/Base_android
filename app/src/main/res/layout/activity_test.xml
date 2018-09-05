@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+    <!--功能一区指定可以多行滚动，还需要配合 activity 中相关代码-->
+    <TextView
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:maxLines="15"
+
+        android:id="@+id/textView_out_textActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <EditText
+        android:id="@+id/editTest_x_testActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>
